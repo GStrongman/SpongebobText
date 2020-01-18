@@ -10,7 +10,7 @@ import java.util.Scanner;
  * to the user's clipboard.
  */
 
-public class main {
+public class SingleLine {
     public static void main(String[] args){
         //read text in and process
         Scanner sc = new Scanner(System.in);
@@ -31,5 +31,6 @@ public class main {
         Transferable transferable = new StringSelection(text);
         clipboard.setContents(transferable, null);
         System.out.print(a);
+        sc.close();
     }
 }
