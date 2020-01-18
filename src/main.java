@@ -11,11 +11,11 @@ import java.util.Scanner;
  */
 
 public class main {
-    public static void main(String args[]){
+    public static void main(String[] args){
         //read text in and process
         Scanner sc = new Scanner(System.in);
         String text = sc.nextLine().toLowerCase();
-        char a[] = new char[text.length()];
+        char[] a = new char[text.length()];
         for (int i = 0; i < text.length(); i++){
             a[i] = text.charAt(i);
             if (i % 2 != 0){
